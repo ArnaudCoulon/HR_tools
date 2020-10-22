@@ -6,14 +6,10 @@ from itertools import combinations
 
 l = [1,2,4,8,16]
 
-print(l)
-
 d= {}
 x=1
 while x < len(l)+1:
-    print(list(combinations(l, x)))
     d["lst{0}".format(x)] = list(combinations(l, x))
-    print(d)
     x=x+1
     
 result=[]
